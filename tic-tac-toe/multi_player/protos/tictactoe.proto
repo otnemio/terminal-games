@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service Gamer {
+  rpc SayTic (HelloRequest) returns (HelloReply) {}
+  rpc SayTac (HelloRequest) returns (HelloReply) {}
+  rpc SayToe (HelloRequest) returns (HelloReply) {}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
